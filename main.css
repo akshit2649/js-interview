@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 32px;
+}
+
+body {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:first-child {
+  background-color: aqua;
+}
+
+.square:nth-child(2) {
+  background-color: lightgoldenrodyellow;
+}
+
+.square:nth-child(3) {
+  background-color: dodgerblue;
+}
