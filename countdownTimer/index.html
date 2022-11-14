@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="timer">
+        <div class="hours">
+          <span>Hours</span>
+          <input
+            id="hour"
+            type="number"
+            maxlength="2"
+            placeholder="00"
+            oninput="this.value = this.value.slice(0, maxLength)"
+          />
+        </div>
+        <span>:</span>
+        <div class="minutes">
+          <span>Minutes</span>
+          <input
+            id="minute"
+            oninput="this.value = this.value.slice(0, maxLength)"
+            type="number"
+            maxlength="2"
+            placeholder="00"
+          />
+        </div>
+        <span>:</span>
+        <div class="seconds">
+          <span>Seconds</span>
+          <input
+            id="second"
+            oninput="this.value = this.value.slice(0, maxLength)"
+            type="number"
+            maxlength="2"
+            placeholder="00"
+          />
+        </div>
+      </section>
+      <section class="button">
+        <button id="start" class="green start">Start</button>
+        <button id="stop" class="stop orange">Stop</button>
+        <button id="reset" class="red">Reset</button>
+      </section>
+    </main>
+  </body>
+</html>
