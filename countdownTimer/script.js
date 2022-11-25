@@ -23,7 +23,7 @@ const init = () => {
     const startInterval = () => {
       countDownInterval = setInterval(() => {
         timer();
-      }, 10);
+      }, 1000);
     };
 
     startInterval();

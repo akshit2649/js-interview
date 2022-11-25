@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+/* Main Container */
+.container {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Input Element */
+.inputBox {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputBox > input {
+  border: none;
+  border-radius: 10px;
+  flex: 1;
+  padding: 10px;
+}
+.inputBox > input:focus {
+  outline: none;
+}
+.inputBox > span {
+  font-weight: bold;
+  padding: 10px 10px 10px 0;
+}
+
+/* Add task Button */
+button {
+  padding: 5px 30px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+/* ToDo list */
+.todoList {
+  list-style: none;
+}
+.task {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.task > input {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.todoList > li {
+  margin-bottom: 20px;
+}
