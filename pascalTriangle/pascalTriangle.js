@@ -1,6 +1,5 @@
 const initApp = () => {
   const pascalTriangleArray = pascalTriangle(7);
-  console.log(pascalTriangleArray);
   domTriangle(pascalTriangleArray);
 };
 
