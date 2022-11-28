@@ -25,4 +25,4 @@ const factorial = memoize((x) => {
 });
 
 console.log(factorial(5));
-console.log(factorial(6));
+console.log(factorial(3));
